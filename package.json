@@ -1,0 +1,16 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "FSM site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss  css/styles.css"
+  },
+  "author": "Juliusz Kwiatkowski",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.9.0"
+  },
+  "devDependencies": {}
+}

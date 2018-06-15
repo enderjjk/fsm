@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>FSM | Homepage</title>
+
+		<!-- Bootstrap -->
+		<link href="css/bootstrap-4.0.0.css" rel="stylesheet">
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+		<link href="bootstrap/css/bootstrap-grid.css" rel="stylesheet" type="text/css">
+		<!-- FSM SCSS compiled stylesheet -->
+		<link href="css/styles.css" rel="stylesheet" type="text/css">
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+	<body>
+		<header class="header d-none d-lg-block d-xl-block">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col">
+						<a href="#" title="FSM Logistics" target="_top"><img src="images/assets/fsm-logo.jpg" alt="FSM Logistics" title="FSM Logistics"></a>
+					</div>
+					<div class="col">
+						<ul class="navbar-nav navbar-expand-lg float-right lng-nav mr-auto">
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<i class="fa fa-globe" aria-hidden="true"></i>
+									Global
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link disabled" href="#">EN</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<nav class="navbar navbar-expand-lg">
+			<div class="container-fluid">
+				<div class="menu">
+					<div class="navbar-header d-none d-sm-block d-md-block d-lg-none">
+						<a href="#" class="navbar-brand" title="FSM Logistics" target="_top"><img src="images/assets/fsm-logo.jpg" alt="FSM Logistics" title="FSM Logistics"></a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav">
+							<li class="nav-item ">
+								<a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="service.html">Services</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Offices</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">About Us</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Contact</a>
+							</li>
+							<li class="nav-item d-none d-sm-block d-md-block d-lg-none">
+								<select>
+									<option value="Eng">English</option>
+									<option value="Rus">Russian</option>
+									<option value="Esp">Spanish</option>
+									<option value="French">French</option>
+								</select>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<section class="section intro">
+			
+			<div class="container-fluid">
+				<div class="intro__bottom--left--element__header--one text-left white-text">
+					<h2>Your Freight</h2>
+				</div>
+				<div class="intro__bottom--left--element__header--two  text-left white-text">
+					<h2>Delivered.</h2>
+				</div>
+				<div class="intro__bottom--left--element__triangle"></div>
+				<div class="row justify-content-xl-end justify-content-lg-end justify-content-md-center justify-content-sm-center">
+					<div class="col-xl-4 col-lg-4 col-md-8 col-sm-10 intro__form">
+						<form class="p-4">
+
+							<div class="btn-toolbar row" role="toolbar" aria-label="Toolbar with button groups">
+								<div class="col">
+									<div class="row form-group mb-4">
+										<div class="col-4 input-group">
+											<label for="exampleFormControlOrigin">Transport</label>
+										</div>
+										<div class="col-8 btn-group " role="group" aria-label="First group">
+											<button type="button" class="btn btn-secondary">
+												<i class="material-icons">airplanemode_active</i>
+											</button>
+											<button type="button" class="btn btn-secondary">
+												<i class="material-icons">train</i>
+											</button>
+											<button type="button" class="btn btn-secondary">
+												<i class="material-icons">directions_boat</i>
+											</button>
+											<button type="button" class="btn btn-secondary">
+												<i class="material-icons">other</i>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col">
+									<div class="row form-group mb-4">
+										<div class="col-4">
+											<label for="exampleFormControlOrigin">Origin</label>
+										</div>
+										<div class="col-8">
+											<select class="form-control" id="exampleFormControlOrigin">
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<div class="row form-group mb-4">
+										<div class="col-4">
+											<label for="exampleFormControlDestination">Destination</label>
+										</div>
+										<div class="col-8">
+											<select class="form-control" id="exampleFormControlDestination">
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											</select>										
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col form-group mb-4">
+									<label for="exampleFormControlWhat">What are you transporting?</label>
+									<input type="text" class="form-control" id="exampleFormControlWhat">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col form-group mb-4">
+									<label for="exampleFormControlFullName">Full name</label>
+									<input type="text" class="form-control" id="exampleFormControlFullName">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col form-group mb-4">
+									<label for="exampleFormControlTelephone">Telephone</label>
+									<input type="text" class="form-control" id="exampleFormControlTelephone" placeholder="00000000000">
+								</div>
+								<div class="col form-group mb-4">
+									<label for="exampleFormControlEmail">Email address</label>
+									<input type="email" class="form-control" id="exampleFormControlEmail" placeholder="name@example.com">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col pl-5">
+									<button type="button" class="col-6 btn btn-primary btn-lg ml-auto d-block">Send</button>
+								</div>
+							</div>
+							
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section about--us">
+			<div class="about-us__top--right--element"></div>
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 text-center">
+						<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						<h2>
+							<a href="#" class="with-icon">About Us</a>
+						</h2>
+					</div>
+					<div class="w-100"></div>
+					<div class="col-4 col-sm-4 col-md-4 col-lg-2 col-xl-2 offset-lg-1 offset-xl-1 tile tile--one text-center my-3">
+						<h1>10</h1>
+						<h5>offices</h5>
+					</div>
+					<div class="col-4 col-sm-4 col-md-4 col-lg-2 col-xl-2 tile tile--two text-center my-3">
+						<h1>100</h1>
+						<h5>dedicated<br/>staff</h5>
+					</div>
+					<div class="col-4 col-sm-4 col-md-4 col-lg-2 col-xl-2 tile tile--three text-center my-3">
+						<h1>67</h1>
+						<h5>logistic<br/>facilities</h5>
+					</div>
+					<div class="col-4 col-sm-4 col-md-4 col-lg-2 col-xl-2 tile tile--four text-center my-3">
+						<h1>80</h1>
+						<h5>worldwide</h5>
+					</div>
+					<div class="col-4 col-sm-4 col-md-4 col-lg-2 col-xl-2 tile tile--five text-center my-3">
+						<h1>5</h1>
+						<h5>decedes of<br/>experience</h5>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section services">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 text-center">
+						<h2>
+							Services
+						</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						<h5>
+							<a href="#" class="with-icon">View all services</a>
+						</h5>
+					</div>
+					<div class="w-100"></div>
+					<div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 my-4">
+						<div class="services__tile text-center">
+							<img src="images/assets/ship.jpg" alt="Ship" title="Ship">
+							<div class="p-3">
+								<h4>Sea Freight</h4>
+								<p>We offer the full range of sea freight imports, exports & cross trades worldwide.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 my-4">
+						<div class="services__tile text-center">
+							<img src="images/assets/track.jpg" alt="Ship" title="Ship">
+							<div class="p-3">
+								<h4>Road Freight</h4>
+								<p>Browse our overland imports, exports & cross trades for Russia, the Ukraine and Eastern, Western & Southern Europe.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 my-4">
+						<div class="services__tile text-center">
+							<img src="images/assets/plane.jpg" alt="Ship" title="Ship">
+							<div class="p-3">
+								<h4>Air Freight</h4>
+								<p>Explore our first door to door import, export and cross trades air freight services worldwide.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="services__bottom--left--element"></div>
+			<div class="services__bottom--right--element"></div>
+		</section>
+		
+		<section class="section global--network">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 text-center">
+						<h2>
+							Our Global network
+						</h2>
+						<p>With 10 offices in 4 countries, and a global network of logistics facilities, we are well placed to securely handle your cargo and provide you with total service flexibility.</p>
+						<h5>
+							<a href="#" class="with-icon">View all offices</a>
+						</h5>
+					</div>
+					<div class="w-100"></div>
+					<div class="col global--network__div">
+						<img class="global--network__image" src="images/assets/map.png" alt="Map" title="Map">
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="section industries">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 text-center">
+						<h2>
+							Industries we serve
+						</h2>
+						<p>Our services can adapt to meet the exact requirements of your industry. Browse the industries we have experience with below, or contact us to discuss your needs.</p>
+						<h5>
+							<a href="#" class="with-icon">View all industries</a>
+						</h5>
+					</div>
+					<div class="w-100"></div>
+					<div class="col">
+						<div class="row">
+							<div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 offset-lg-1 offset-xl-1 my-2">
+								<div class="industries__tile text-center">
+									<a href="#">
+										<i class="material-icons mb-2">directions_car</i>
+										<h5>Automotive</h5>
+									</a>
+								</div>
+							</div>
+							
+							<div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 my-2">
+								<div class="industries__tile text-center">
+									<a href="#">
+										<i class="material-icons mb-2">build</i>
+										<h5>Constraction</h5>
+									</a>
+								</div>
+							</div>
+							
+							<div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 my-2">
+								<div class="industries__tile text-center">
+									<a href="#">
+										<i class="material-icons mb-2">credit_card</i>
+										<h5>Consumer</h5>
+									</a>
+								</div>
+							</div>
+							
+							<div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 my-2">
+								<div class="industries__tile text-center">
+									<a href="#">
+										<i class="material-icons mb-2">directions_car</i>
+										<h5>Energy</h5>
+									</a>
+								</div>
+							</div>
+							
+							<div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 my-2">
+								<div class="industries__tile text-center">
+									<a href="#">
+										<i class="material-icons mb-2">directions_car</i>
+										<h5>Oil &amp; Gas</h5>
+									</a>
+								</div>
+							</div>
+							
+							<div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 offset-lg-1 offset-xl-1 my-2">
+								<div class="industries__tile text-center">
+									<a href="#">
+										<i class="material-icons mb-2">directions_car</i>
+										<h5>Recycling</h5>
+									</a>
+								</div>
+							</div>
+							
+							<div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 my-2">
+								<div class="industries__tile text-center">
+									<a href="#">
+										<i class="material-icons mb-2">directions_car</i>
+										<h5>Retail</h5>
+									</a>
+								</div>
+							</div>
+							
+							<div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 my-2">
+								<div class="industries__tile text-center">
+									<a href="#">
+										<i class="material-icons mb-2">directions_car</i>
+										<h5>Technology</h5>
+									</a>
+								</div>
+							</div>
+							
+							<div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 my-2">
+								<div class="industries__tile text-center">
+									<a href="#">
+										<i class="material-icons mb-2">directions_car</i>
+										<h5>Waste</h5>
+									</a>
+								</div>
+							</div>
+							
+							<div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 my-2">
+								<div class="industries__tile industries__tile--your_industry text-center">
+									<a href="#">
+										<i class="material-icons mb-2">more_horiz</i>
+										<h5>Your industry</h5>
+									</a>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section contact--form">
+			<div class="contact--form__top--left--element"></div>
+			<div class="contact--form__top--right--element"></div>
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 text-center text-white">
+						<h2>
+							Any questions?
+						</h2>
+						<p>Our experts are ready to help.<br/>Get in touch and we will help you find the rigth solution for your transportation needs. Use the form below or email us at: <a href="mailto:help@fsmlogistics.com">help@fsmlogistics.com</a>.</p>
+						<h5>
+							<a href="#" class="with-icon">Request a quote</a>
+						</h5>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<form class="p-4">
+							<div class="row">
+								<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 form-group mb-4">
+									<label for="exampleFormControlFullName2">Full name</label>
+									<input type="text" class="form-control" id="exampleFormControlFullName2">
+								</div>
+								<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 form-group mb-4">
+									<label for="exampleFormControlSubject">Subject</label>
+									<input type="text" class="form-control" id="exampleFormControlSubject">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 ">
+									<div class="form-group mb-4">
+										<label for="exampleFormControlTelephone2">Telephone</label>
+										<input type="text" class="form-control" id="exampleFormControlTelephone2" placeholder="00000000000">
+									</div>
+									<div class="form-group mb-4">
+										<label for="exampleFormControlEmail2">Email address</label>
+										<input type="email" class="form-control" id="exampleFormControlEmail2" placeholder="name@example.com">
+									</div>
+								</div>
+								<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 ">
+									<div class="form-group mb-4">
+										<label for="exampleFormControlMessage">Message</label>
+										<textarea class="form-control" id="exampleFormControlMessage" rows="5"></textarea>
+									</div>
+								</div>
+							</div>
+							<button type="button" class="btn btn-primary btn-lg mx-auto d-block">Contact Us</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+						<ul class="legal mr-auto">
+							<li><a href="#" target="_top">Privacy Policy</a></li>
+							<li><a href="#" target="_top">Cookie Policy</a></li>
+							<li><a href="#" target="_top">Terms and Conditions</a></li>
+						</ul>
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+						<ul class="none-legal ml-auto">
+							<li><a href="#" target="_top">Request a quote</a></li>
+							<li><a href="#" target="_top">Careers</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row copyrights">
+					<div class="col text-center">
+						<p>&copy; 2018 F.S. Mackenzie Logistics. All Rights Reserved.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+		<script src="js/jquery-3.2.1.min.js"></script>
+
+		<!-- Include all compiled plugins (below), or include individual files as needed --> 
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap-4.0.0.js"></script>
+	</body>
+</html>

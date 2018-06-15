@@ -1,0 +1,26 @@
+.btn{
+	font-weight: bold;
+	&.btn-lg{
+		font-size: 1em;
+	}
+	&.btn-primary{
+		background: $brand-primary;
+		border-color: $brand-primary;
+		color: $brand-secondary;
+		&:hover{
+			background: $brand-secondary;
+			border-color: $brand-secondary;
+			color: $brand-primary;
+			@include box-shadow($rgb-white-05);
+		}
+	}
+	&.btn-secondary{
+		background: $brand-secondary;
+		border-color: $brand-secondary;
+		&:hover{
+			background: $brand-primary;
+			border-color: $brand-primary;
+			@include box-shadow($rgb-white-05);
+		}
+	}
+}

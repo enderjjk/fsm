@@ -1,0 +1,22 @@
+$black: #000;
+$white: #fff;
+
+// New colors
+$grey-color:  #999999 !default;
+$black-color: #3C4858 !default;
+
+$black: #000000; $rgb-black: "0,0,0" !default;
+$white: #ffffff; $rgb-white: "255,255,255" !default;
+$rgb-white-05: rgba(255,255,255,0.5);
+//## Gray and brand colors for use across Bootstrap.
+
+$grey-base:              #000 !default;
+$grey-darker:            lighten($grey-base, 13.5%) !default; // #222
+$grey-dark:              lighten($grey-base, 20%) !default;   // #333
+$grey:                   lighten($grey-base, 33.5%) !default; // #555
+$grey-light:             #999999 !default; // #999999
+$grey-lighter:           lighten($grey-base, 93.5%) !default; // #eee
+
+$grey: #eee;
+
+$font-default-color: $grey-dark;

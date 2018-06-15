@@ -1,0 +1,84 @@
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+$font-size-base:         16px !default;
+
+$font-size-h1:                 3.8rem !default;
+$font-size-h2:                 2.6rem !default;
+$font-size-h3:                 1.825rem !default;
+$font-size-h4:                 1.3rem !default;
+$font-size-h5:                 1.25rem !default;
+$font-size-h6:                 1rem !default;
+$font-paragraph:               1rem !default;
+
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body{
+    font-size: $font-size-base;
+	color: $font-default-color;
+	font-family: $font-family-sans-serif;
+}
+
+h1, .h1 {
+    font-size: $font-size-h1;
+    line-height: 1.15em;
+	margin-bottom: 1.25em;
+}
+h2, .h2{
+    font-size: $font-size-h2;
+	margin-bottom: 1.25em;
+}
+h3, .h3{
+    font-size: $font-size-h3;
+    line-height: 1.4em;
+	margin-bottom: 1.25em;
+}
+h4, .h4{
+    font-size: $font-size-h4;
+    line-height: 1.4em;
+	margin-bottom: 1.25em;
+}
+h5, .h5 {
+    font-size: $font-size-h5;
+    line-height: 1.4em;
+    margin-bottom: 1.25em;
+}
+h6, .h6{
+    font-size: $font-size-h6;
+    text-transform: uppercase;
+    font-weight: $font-weight-bold;
+}
+
+.title,
+.card-title,
+.info-title,
+.footer-brand,
+.footer-big h5,
+.footer-big h4,
+.media .media-heading{
+    //font-weight: $font-weight-extra-bold;
+    // font-family: $font-family-serif;
+
+    &,
+    a{
+        color: $black-color;
+        text-decoration: none;
+    }
+}
+
+.card-blog .card-title{
+    font-weight: $font-weight-extra-bold;
+}
+
+.description,
+.card-description,
+.footer-big p{
+    color: $grey-light;
+}
+
+.alert, p, button.btn{
+	font-size: $font-size-base;
+}

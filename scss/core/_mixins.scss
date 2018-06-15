@@ -1,0 +1,26 @@
+@mixin box-shadow($color){
+	-webkit-box-shadow: 0px 0px 10px 0px $color;
+	-moz-box-shadow: 0px 0px 10px 0px $color;
+	box-shadow: 0px 0px 10px 0px $color;	
+}
+a { 
+	color: $link-colour; 
+	&:visited{
+		color: $link-colour; 
+	}
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $grey-lighter;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $grey-lighter;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: $grey-lighter;
+}
+.form-group{
+	margin-bottom:0;
+}
