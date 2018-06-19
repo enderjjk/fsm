@@ -24,3 +24,12 @@ a {
 .form-group{
 	margin-bottom:0;
 }
+.location{
+	position: absolute;
+	top:0;
+	left:0;
+	background: $brand-primary;
+	padding:10px;
+	line-height: 20px;
+	color:$white;
+}

@@ -23,4 +23,24 @@
 			@include box-shadow($rgb-white-05);
 		}
 	}
+	&.btn-white{
+		background: $white;
+		border-color: $white;
+		color:$brand-secondary;
+		&:hover{
+			background: $brand-secondary;
+			border-color: $brand-secondary;
+			color:$white;
+		}
+		
+	}
+	&.btn-simple{
+		color: $brand-primary;
+		background:none;
+		padding: 0;
+		&:hover{
+			background:none;
+			text-decoration: underline;
+		}
+	}
 }

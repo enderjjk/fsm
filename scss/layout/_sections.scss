@@ -1,14 +1,16 @@
 .section{
 	&.intro{
 		position: relative;
-		background: url(../images/assets/transport.jpg) no-repeat left top;	 
+		background: url(../images/assets/home_hero.jpg) no-repeat left top;	 
 		background-size: cover;
+		&.services--hero{
+			background: url(../images/assets/services.jpg) no-repeat center center;	 
+			background-size: cover;
+		}
 		.intro__form{
 			position: relative;
 			z-index: 4;
-			background: rgba(0, 0, 0, 0.5);
-			padding-top:2rem;
-			padding-bottom:2rem;
+			background: rgba(0, 0, 0, 0.75);
 			.form-group{
 				label{
 					color: $white;
@@ -164,6 +166,131 @@
 			clip-path: polygon(0% 0%, 100% 100%, 100% 100%, 100% 0%);
 		}
 	}
+	&.about--us__page{
+		position: relative;
+		background: url(../images/assets/about.jpg) no-repeat left top;	 
+		background-size: 90%;
+		background-position: center center;
+		min-height:1000px;
+		.about-us__page--intro{
+			position: absolute; 
+			z-index: 2;
+			bottom:-2rem;
+			left:0;
+			padding:2.5% 5% 2.5% 2.5%;
+			background: $brand-primary;
+			width:40%;
+			content:"";
+			-webkit-clip-path: polygon(0% 0, 95% 0, 100% 100%, 0% 100%);
+			clip-path: polygon(0% 0, 95% 0, 100% 100%, 0% 100%);
+			& h2{
+				margin-bottom: 0;
+				line-height: 6rem;
+				color: $brand-secondary;
+			}
+			& p{
+				font-size: 1.2em;
+				color: $brand-secondary;
+			}
+		}
+	}
+	&.our--strategy{
+		padding-top:10rem;
+		padding-bottom:15rem;
+		position: relative;
+		background: $white;
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+		clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+		& h2 {
+			a{
+				color: $brand-primary;
+			}
+		}
+		.tile{
+			color:$white;
+			height:300px;
+			background: about-us-tile-top;
+			background: -webkit-linear-gradient(top, $our-strategy-tile-top 0%, $our-strategy-tile-bottom 100%);
+			background: -o-linear-gradient(top, $our-strategy-tile-top 0%, $our-strategy-tile-bottom 100%);
+			background: linear-gradient(to bottom, $our-strategy-tile-top 0%, $our-strategy-tile-bottom 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#161d48', endColorstr='#024174', GradientType=1 );
+			& h3{
+				font-size: $font-size-h4;
+			}
+			& p{
+				font-size: 0.85em;
+			}
+			&.tile--one{			
+				-webkit-clip-path: polygon(2% 5%, 5% 85%, 90% 100%, 100% 0%);
+				clip-path: polygon(2% 5%, 5% 85%, 90% 100%, 100% 0%);
+			}
+			&.tile--two{			
+				-webkit-clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+				clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+			}
+			&.tile--three{			
+				-webkit-clip-path: polygon(0% 0%, 10% 100%, 90% 95%, 100% 0%);
+				clip-path: polygon(0% 0%, 10% 100%, 90% 95%, 100% 0%);
+			}
+			&.tile--four{			
+				-webkit-clip-path: polygon(10% 0%, 0% 95%, 100% 100%, 95% 0%);
+				clip-path: polygon(10% 0%, 0% 95%, 100% 100%, 95% 0%);
+			}
+			&.tile--five{			
+				-webkit-clip-path: polygon(5% 0%, 10% 100%, 100% 90%, 90% 0%);
+				clip-path: polygon(5% 0%, 10% 100%, 100% 90%, 90% 0%);
+			}
+		}
+		.our--strategy__top--right--element{
+			position: absolute; 
+			top:0;
+			right:0;
+			background: $brand-primary;
+			width:30rem;
+			height:7rem;
+			content:"";
+			-webkit-clip-path: polygon(0% 0%, 100% 100%, 100% 100%, 100% 0%);
+			clip-path: polygon(0% 0%, 100% 100%, 100% 100%, 100% 0%);
+		}
+		
+	}
+	&.our--management{
+		position: relative;
+		padding-top:15rem;
+		padding-bottom:15rem;
+		background: $grey-lighter;
+		& .our--management__team--member{
+			& .our--management__team--member__image{
+				position: relative;
+				img { 
+					width:100%; 
+				}
+			}
+			
+		}
+		.our--management__top--left--element{
+			background: $white;
+			position: absolute; 
+			top:0;
+			left:0;
+			width:100%;
+			height:10rem;
+			content:"";
+			-webkit-clip-path: polygon(0 0, 100% 100%, 100% 0);
+			clip-path: polygon(0 0, 100% 100%, 100% 0);
+		}
+		.our--management__bottom--right--element{
+			background: $brand-primary;
+			position: absolute; 
+			bottom: -5rem;
+			right: 0;
+			width: 50%;
+			height: 10rem;
+			content: "";
+			-webkit-clip-path: polygon(100% 0, 0 50%, 100% 100%);
+			clip-path: polygon(100% 0, 0 50%, 100% 100%);
+		}
+	}
 	&.services{
 		position: relative;
 		padding-top:10rem;
@@ -207,18 +334,157 @@
 			box-shadow:0 1px 4px $grey-lighter, 0 0 40px $grey-lighter;
 		}
 	}
+	&.services__page{
+		padding-top:10rem;
+		padding-bottom:10rem;
+		& h2 {
+			color: $brand-secondary;
+		}
+		& h5{
+			& a{
+				color: $brand-primary;
+			}
+		}
+		& .services__page--tile{
+			background-repeat: no-repeat;
+			background-size: contain!important;
+			&.services__page--tile__sea {
+				background: url(../images/assets/sea.jpg);
+			}
+			&.services__page--tile__road{
+				background: url(../images/assets/road.jpg);
+			}
+			&.services__page--tile__air{
+				background: url(../images/assets/air.jpg);
+				background-size:75%!important;
+				background-position: -150px -117px !important;
+			}
+			&.services__page--tile__specialist--services{
+				background: url(../images/assets/services.jpg);
+				background-position: 470px center!important;
+			}
+			&.services__page--tile__customs{
+				background: url(../images/assets/customs.jpg);
+			}
+			& .services__page--tile__content { 
+				position: relative;
+				background: $brand-primary;
+				color: $brand-secondary;
+				& .services__page--tile__content--element{
+					background: $brand-primary;
+					position: absolute;
+					z-index:1;
+					width: 100px;
+					height: 100%;
+					content: "";
+				}
+				
+			}
+			&:nth-child(odd){
+				background-position: left center;
+				& .services__page--tile__content { 
+					& .services__page--tile__content--element{
+						top: 0;
+						left: -90px;
+						-webkit-clip-path: polygon(75% 0, 100% 0%, 100% 100%, 0% 100%);
+						clip-path: polygon(75% 0, 100% 0%, 100% 100%, 0% 100%);
+					}
+				}
+			}
+			&:nth-child(even){
+				background-position: right center;
+				& .services__page--tile__content { 
+					& .services__page--tile__content--element{
+						top: 0;
+						right: -90px;
+						-webkit-clip-path: polygon(0% 0%, 100% 0%, 25% 100%, 0 100%);
+						clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0 100%);
+					}
+				}
+			}
+		}
+	}
 	&.global--network{
 		background: $grey-lighter;
 		padding-top:10rem;
-		padding-bottom:20rem;
+		padding-bottom:10rem;
 		& .global--network__div{
 			position: relative;
 			min-height: 200px;
-			& .global--network__image{
+			background: url("../images/assets/world-map.png") no-repeat;
+			background-size: 100%;
+			min-height:800px;
+			& .global--network__office{
 				position: absolute;
-				left: 50%;
-				margin-left:-400px;
-				
+				&.moscow--office{
+					top: 200px;
+					left: 55%;
+				}
+				& .small{
+					transform: all 0.5s;
+					height:10px;
+					width:10px;
+					border-radius: 50%;
+					background:$brand-primary;
+					font-size: 0;
+					opacity: 1;
+					position: relative;
+					top:50%;
+					left:50%;
+					margin-top:-5px;
+					margin-left:-5px;
+				}
+				& .big{
+					transform: all 0.5s;
+					border-radius: 50%;
+					height:150px;
+					width:150px;
+					padding:25px;
+					top:50%;
+					left:50%;
+					margin-top:-100px;
+					margin-left:-100px;
+					background: $brand-primary;
+					opacity: 0;
+				}
+				&:hover{
+					& .small{
+						opacity: 0;
+					}
+					& .big{
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+	&.current--vacancies{
+		background: $white;
+		padding-top:10rem;
+		padding-bottom:20rem;
+		& .current--vacancies__vacancy{
+			border:1px solid $grey-lighter;
+			position: relative;
+			-webkit-box-shadow:0 1px 4px $grey-lighter, 0 0 40px $grey-lighter;
+			-moz-box-shadow:0 1px 4px $grey-lighter, 0 0 40px $grey-lighter;
+			box-shadow:0 1px 4px $grey-lighter, 0 0 40px $grey-lighter;
+			& .current--vacancies__vacancy--content{
+				& h4{
+					color:  $brand-secondary;
+				}
+				& .current--vacancies__vacancy--content--div{
+					&.more{
+						display: none;
+						&.open{
+							display: block;
+							-webkit-animation: fadeIn 1s;
+    						animation: fadeIn 1s;
+						}
+					}
+				}
+			}
+			& .current--vacancies__vacancy--contact{
+				border-left:1px solid $grey-lighter;
 			}
 		}
 	}
@@ -227,7 +493,13 @@
 		padding-bottom:20rem;
 		& .industries__tile{
 			& a{
+				width: 100%;
+				position: relative;
 				& i{
+					position: absolute;
+					top:-60px;
+					left:50%;
+					margin-left:-25px;
 					height:48px;
 					line-height:42px;
 					width: 48px;
@@ -235,9 +507,23 @@
 					background: $brand-primary;
 					color: $white;
 					border: 2px solid $brand-primary;
+					&.fi{
+						font-size: 24px;
+						text-align: center;
+						font-family: "Flaticon";
+						&.recycling{
+							&::before{
+								font-family: FontAwesome, "FontAwesome"!important;
+								content: "\f1b8"!important;
+								position: relative;
+    							top: 1.5px;
+							}
+						}
+					}
 					
 				}
 				& h5{
+					margin-top:65px;
 					font-size: $font-size-h6;
 					color: $font-default-color;
 				}

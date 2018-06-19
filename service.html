@@ -51,25 +51,31 @@
 					<div class="navbar-header d-none d-sm-block d-md-block d-lg-none">
 						<a href="#" class="navbar-brand" title="FSM Logistics" target="_top"><img src="images/assets/fsm-logo.jpg" alt="FSM Logistics" title="FSM Logistics"></a>
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
+							<span class="navbar-toggler-icon">
+								<div class="menu-icon">
+									<div class="menu-icon-box">
+										<div class="menu-icon-inner"></div>
+									</div>
+								</div>
+							</span>
 						</button>
 					</div>
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav">
 							<li class="nav-item ">
-								<a class="nav-link " href="index.html">Home </a>
+								<a class="nav-link" href="index.html">Home </a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link active" href="service.html">Services <span class="sr-only">(current)</span></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Offices</a>
+								<a class="nav-link" href="offices.hmtl">Offices</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">About Us</a>
+								<a class="nav-link" href="about-us.html">About Us</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Contact</a>
+								<a class="nav-link" href="#contact--us">Contact</a>
 							</li>
 							<li class="nav-item d-none d-sm-block d-md-block d-lg-none">
 								<select>
@@ -84,7 +90,7 @@
 				</div>
 			</div>
 		</nav>
-		<section class="section intro">
+		<section class="section intro services--hero p-4">
 			
 			<div class="container-fluid">
 				<div class="intro__bottom--left--element__header--one text-left white-text">
@@ -95,9 +101,9 @@
 				</div>
 				<div class="intro__bottom--left--element__triangle"></div>
 				<div class="row justify-content-xl-start justify-content-lg-start justify-content-md-center justify-content-sm-center">
-					<div class="col-xl-4 col-lg-4 col-md-8 col-sm-10 intro__form m-4">
-						<form class="p-4">
-
+					<div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 intro__form m-4 p-4">
+						<h2 class="text-white pt-0">Request a quote</h2>
+						<form>	
 							<div class="btn-toolbar row" role="toolbar" aria-label="Toolbar with button groups">
 								<div class="col">
 									<div class="row form-group mb-4">
@@ -191,7 +197,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="section services">
+		<section class="section services__page">
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 text-center">
@@ -204,32 +210,67 @@
 						</h5>
 					</div>
 					<div class="w-100"></div>
-					<div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 my-4">
-						<div class="services__tile text-center">
-							<img src="images/assets/ship.jpg" alt="Ship" title="Ship">
-							<div class="p-3">
-								<h4>Sea Freight</h4>
-								<p>We offer the full range of sea freight imports, exports & cross trades worldwide.</p>
+					
+					<div class="col my-4">
+						<div class="row justify-content-end services__page--tile services__page--tile__sea mb-5">
+							<div class="col-6 services__page--tile__content p-4">
+								<div class="services__page--tile__content--element"></div>
+								<h2 class="mb-2">Sea Freight</h2>
+								<p>We offer the full range of sea freight imports, exports & cross trades worldwide. Browse our sea freight services below, or contact us fro tailor made solution:</p>
+								<ul>
+									<li>FCL</li>
+									<li>LCL groupage</li>
+									<li>consolidation</li>
+									<li>special sea cargo</li>
+								</ul>
+								<button class="btn btn-white">Request quote</button>
 							</div>
 						</div>
-					</div>
-					<div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 my-4">
-						<div class="services__tile text-center">
-							<img src="images/assets/track.jpg" alt="Ship" title="Ship">
-							<div class="p-3">
-								<h4>Road Freight</h4>
-								<p>Browse our overland imports, exports & cross trades for Russia, the Ukraine and Eastern, Western & Southern Europe.</p>
+						
+						<div class="row justify-content-start services__page--tile services__page--tile__road mb-5">
+							<div class="col-6 services__page--tile__content p-4">
+								<div class="services__page--tile__content--element"></div>
+								<h2 class="mb-2">Road freight</h2>
+								<p>With our specialists focus on Russia, the kraine and Eastern, Western & Southern Europe, we offer coprehensive and flaxible overland imports, exports & cross trades:</p>
+								<ul>
+									<li>LTL</li>
+									<li>Dry van / Truckload</li>
+									<li>Flatbed</li>
+									<li>Temperature Controlled LTL</li>
+									<li>Temperature Controlled Truckload</li>
+									<li>Over Dimensional Heavy Haul</li>
+								</ul>
+								<button class="btn btn-white">Request quote</button>
 							</div>
 						</div>
-					</div>
-					<div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 my-4">
-						<div class="services__tile text-center">
-							<img src="images/assets/plane.jpg" alt="Ship" title="Ship">
-							<div class="p-3">
-								<h4>Air Freight</h4>
-								<p>Explore our first door to door import, export and cross trades air freight services worldwide.</p>
+						
+						<div class="row justify-content-end services__page--tile services__page--tile__air mb-5">
+							<div class="col-6 services__page--tile__content p-4">
+								<div class="services__page--tile__content--element"></div>
+								<h2 class="mb-2">Air freight</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								<button class="btn btn-white">Request quote</button>
 							</div>
 						</div>
+						
+						<div class="row justify-content-start services__page--tile services__page--tile__specialist--services mb-5">
+							<div class="col-6 services__page--tile__content p-4">
+								<div class="services__page--tile__content--element"></div>
+								<h2 class="mb-2">Specialist services</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+								<button class="btn btn-white">Request quote</button>
+							</div>
+						</div>
+						
+						<div class="row justify-content-end services__page--tile services__page--tile__customs mb-5">				
+							<div class="col-6 services__page--tile__content p-4">
+								<div class="services__page--tile__content--element"></div>
+								<h2 class="mb-2">Custom, warehousing and deliveries</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								<button class="btn btn-white">Request quote</button>
+							</div>		
+						</div>	
 					</div>
 				</div>
 			</div>
@@ -294,31 +335,74 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-						<ul class="legal mr-auto">
+						<ul class="legal justify-content-md-center justify-content-sm-center">
 							<li><a href="#" target="_top">Privacy Policy</a></li>
 							<li><a href="#" target="_top">Cookie Policy</a></li>
 							<li><a href="#" target="_top">Terms and Conditions</a></li>
 						</ul>
 					</div>
 					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-						<ul class="none-legal ml-auto">
+						<ul class="none-legal justify-content-xl-end justify-content-lg-end justify-content-md-center justify-content-sm-center">
 							<li><a href="#" target="_top">Request a quote</a></li>
 							<li><a href="#" target="_top">Careers</a></li>
 						</ul>
 					</div>
 				</div>
-				<div class="row copyrights">
-					<div class="col text-center">
-						<p>&copy; 2018 F.S. Mackenzie Logistics. All Rights Reserved.</p>
-					</div>
-				</div>
 			</div>
 		</footer>
+		<div class="copyrights">
+			<div class="text-center">
+				<p>&copy; 2018 F.S. Mackenzie Logistics. All Rights Reserved.</p>
+			</div>
+		</div>
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 		<script src="js/jquery-3.2.1.min.js"></script>
 
 		<!-- Include all compiled plugins (below), or include individual files as needed --> 
 		<script src="js/popper.min.js"></script>
 		<script src="js/bootstrap-4.0.0.js"></script>
+		<script type="text/javascript">
+
+			function equalBoxSizes(classToCheck) {
+				
+				var height = 0;
+				
+				$(classToCheck).each(function() {
+					
+					if ($(this).parent().outerHeight() > height){
+						 height = $(this).parent().outerHeight();
+					}
+					
+				});
+				
+				$(classToCheck).css("height", height+10);
+			}
+			
+			$(document).ready(function() {
+				equalBoxSizes(".services__page--tile__content");
+				
+				$(document).on('click', 'a[href^="#"]', function(e) {
+					// target element id
+					var id = $(this).attr('href');
+
+					// target element
+					var $id = $(id);
+					if ($id.length === 0) {
+						return;
+					}
+
+					// prevent standard hash navigation (avoid blinking in IE)
+					e.preventDefault();
+
+					// top position relative to the document
+					var pos = $id.offset().top;
+
+					// animated top scrolling
+					$('body, html').animate({scrollTop: pos});
+				});
+				
+			});
+			
+		</script>
 	</body>
 </html>

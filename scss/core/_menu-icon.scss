@@ -1,0 +1,116 @@
+.navbar-toggler{
+	.menu-icon {
+		position:fixed;
+		top:10px;
+		right:10px;
+		padding: 15px;
+		display: inline-block;
+		cursor: pointer;
+		transition-property: opacity, -webkit-filter;
+		transition-property: opacity, filter;
+		transition-property: opacity, filter, -webkit-filter;
+		transition-duration: 0.15s;
+		transition-timing-function: linear;
+		font: inherit;
+		color: inherit;
+		text-transform: none;
+		background-color: transparent;
+		border: 0;
+		margin: 0;
+		overflow: visible;
+		z-index:4; 
+		background:none;
+		&:focus, &:visited{ border:none; }
+		&:hover {
+			opacity: 0.7; 
+			border:none;
+		}
+		.menu-icon-box {
+			width: 30px;
+			height: 18px;
+			display: inline-block;
+			position: relative; 
+			border:0;
+			.menu-icon-inner{
+				background-color:#fff;
+
+				transition-duration: 0.4s;
+				transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); 
+				display: block;
+				background-color: $black;
+				content: "";
+				top: 50%;
+				margin-top:0;
+				width: 30px;
+				height: 4px;
+				border-radius: 2px;
+				transition-duration: 0.4s;
+				transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+				&::before{    
+					top: 10px;
+    				transition: opacity 0.15s 0.4s ease; 
+					content: "";
+					display: block;
+					width: 30px;
+					height: 4px;
+					background-color: $black;
+					border-radius: 2px;
+					position: absolute;
+					transition-property: -webkit-transform;
+					transition-property: transform;
+					transition-property: transform, -webkit-transform;
+					transition-duration: 0.15s;
+					transition-timing-function: ease;
+				}
+				&::after {
+					top: 20px;
+					transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+					transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+					transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55); 
+					
+					content: "";
+					display: block;
+					width: 30px;
+					height: 4px;
+					background-color: $black;
+					border-radius: 2px;
+					position: absolute;
+					transition-property: -webkit-transform;
+					transition-property: transform;
+					transition-property: transform, -webkit-transform;
+					transition-duration: 0.15s;
+					transition-timing-function: ease;
+					bottom:-10px;
+				}
+			}
+		}
+
+		
+	}
+	&[aria-expanded="true"]{	
+		.menu-icon {
+			.menu-icon-box {
+				.menu-icon-inner{
+					transition-duration: 0.4s;
+					background-color: $black;
+					-webkit-transform: translate3d(0, 10px, 0) rotate(135deg);
+					transform: translate3d(0, 10px, 0) rotate(135deg);
+					transition-delay: 0.1s;
+					&::after{
+						 -webkit-transform: translate3d(0, -20px, 0) rotate(-270deg);
+						transform: translate3d(0, -20px, 0) rotate(-270deg);
+						transition-delay: 0.1s; 
+						bottom:-19px;
+						background-color: $black;
+					}
+					&::before{
+						transition-delay: 0s;
+    					opacity: 0; 
+						background-color: $black;
+					}
+				}
+			}
+		}
+	}
+}
+

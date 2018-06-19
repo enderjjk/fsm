@@ -3,4 +3,58 @@
 	.intro__bottom--left--element__header--two{
 		display:none;
 	}
+	section {
+		&.section{
+			&.services__page{
+				& .services__page--tile{
+					background-size:100% 100%!important;
+					&:nth-child(odd){
+						background-position: left top!important;
+					}
+					&:nth-child(even){
+						background-position: right top!important;
+					}
+				}
+			}
+		}
+	}
+	.navbar{
+		& .navbar-collapse {
+			& .navbar-nav{
+				display: table;
+				& li{
+					&.nav-item {
+						display: table-row;
+						width:100%;
+						float: left;
+						& select{
+							width:50%;
+							position: relative;
+							left:25%;
+							top:13px;
+							height:44px;
+						}
+						a{
+							&.nav-link {
+								border-bottom:1px solid $grey-lighter;
+								width:100%;
+								float: left;
+								padding:auto 0;
+								text-align: center;
+								&.active{
+									background: $grey-lighter;
+									border-bottom:1px solid $grey-lighter;
+								}
+								&:hover{
+									background: $brand-primary;
+									color: $white;
+									border-bottom:1px solid $grey-lighter;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }

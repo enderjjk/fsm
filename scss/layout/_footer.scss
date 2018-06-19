@@ -24,12 +24,20 @@
 			}
 		}
 		&.none-legal{
-			float: right;
 			li{
 				
 				border-left: 1px solid $white;
 				a { color:$brand-primary; }
 			}
 		}
+	}
+}
+.copyrights{
+	padding-top:1rem;
+	background: darken($footer-color, 2%);
+	color: $white;
+	& p{
+		margin-bottom:0;
+		padding-bottom:1rem;
 	}
 }

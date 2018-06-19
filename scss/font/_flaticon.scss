@@ -1,0 +1,160 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 22/06/2016 15:12
+    */
+
+@font-face {
+	  font-family: "Flaticon";
+	  src: url("../scss/font/flaticon.eot");
+	  src: url("../scss/font/flaticon.eot?#iefix") format("embedded-opentype"),
+		   url("../scss/font/flaticon.woff") format("woff"),
+		   url("../scss/font/flaticon.ttf") format("truetype"),
+		   url("../scss/font/flaticon.svg#Flaticon") format("svg");
+	  font-weight: normal;
+	  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../scss/font/flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+		display: inline-block;
+		font-family: "Flaticon";
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		line-height: 1;
+		text-decoration: inherit;
+		text-rendering: optimizeLegibility;
+		text-transform: none;
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+		font-smoothing: antialiased;
+		content: "\f11d";
+	}
+
+.flaticon-3d-ship:before { content: "\f100"; }
+.flaticon-battery-full-charge:before { content: "\f101"; }
+.flaticon-burning-oil-tower:before { content: "\f102"; }
+.flaticon-businessman-with-helmet:before { content: "\f103"; }
+.flaticon-car-battery:before { content: "\f104"; }
+.flaticon-cargo-ship:before { content: "\f105"; }
+.flaticon-charging-battery-status:before { content: "\f106"; }
+.flaticon-chemistry-atoms:before { content: "\f107"; }
+.flaticon-circular-saw:before { content: "\f108"; }
+.flaticon-co2-inside-cloud:before { content: "\f109"; }
+.flaticon-construction-crane:before { content: "\f10a"; }
+.flaticon-construction-crane-1:before { content: "\f10b"; }
+.flaticon-construction-crane-2:before { content: "\f10c"; }
+.flaticon-construction-truck:before { content: "\f10d"; }
+.flaticon-electric-car:before { content: "\f10e"; }
+.flaticon-electric-plug:before { content: "\f10f"; }
+.flaticon-european-plug:before { content: "\f110"; }
+.flaticon-european-socket:before { content: "\f111"; }
+.flaticon-factory-silhouette:before { content: "\f112"; }
+.flaticon-fire-flame:before { content: "\f113"; }
+.flaticon-gas-can:before { content: "\f114"; }
+.flaticon-gas-pump:before { content: "\f115"; }
+.flaticon-gas-pump-1:before { content: "\f116"; }
+.flaticon-high-speed-train:before { content: "\f117"; }
+.flaticon-house-with-tree-leaf:before { content: "\f118"; }
+.flaticon-industrial-pipe:before { content: "\f119"; }
+.flaticon-industrial-pipe-1:before { content: "\f11a"; }
+.flaticon-industrial-pipe-2:before { content: "\f11b"; }
+.flaticon-light-bulb:before { content: "\f11c"; }
+.flaticon-light-bulb-1:before { content: "\f11d"; }
+.flaticon-light-bulb-2:before { content: "\f11e"; }
+.flaticon-light-bulb-inside-circle:before { content: "\f11f"; }
+.flaticon-mine-cart:before { content: "\f120"; }
+.flaticon-mine-cart-1:before { content: "\f121"; }
+.flaticon-nuclear-plant-chimneys:before { content: "\f122"; }
+.flaticon-oil-drum:before { content: "\f123"; }
+.flaticon-oil-drum-1:before { content: "\f124"; }
+.flaticon-oil-platform:before { content: "\f125"; }
+.flaticon-oil-pumpjack-extraction:before { content: "\f126"; }
+.flaticon-oil-tower:before { content: "\f127"; }
+.flaticon-pick-tool:before { content: "\f128"; }
+.flaticon-pressure-indicator:before { content: "\f129"; }
+.flaticon-recycling-truck:before { content: "\f12a"; }
+.flaticon-refresh-arrows:before { content: "\f12b"; }
+.flaticon-rounded-plug:before { content: "\f12c"; }
+.flaticon-rubbish-can:before { content: "\f12d"; }
+.flaticon-silhouette-pushing-wheelbarrow:before { content: "\f12e"; }
+.flaticon-solar-panels:before { content: "\f12f"; }
+.flaticon-sun-with-plug:before { content: "\f130"; }
+.flaticon-toxic-sign:before { content: "\f131"; }
+.flaticon-train-tank-wagon:before { content: "\f132"; }
+.flaticon-transmission-tower:before { content: "\f133"; }
+.flaticon-wall-socket:before { content: "\f134"; }
+.flaticon-water-can:before { content: "\f135"; }
+.flaticon-water-drop:before { content: "\f136"; }
+.flaticon-water-truck:before { content: "\f137"; }
+.flaticon-wind-turbines:before { content: "\f138"; }
+.flaticon-worker-helmet:before { content: "\f139"; }
+.flaticon-worker-with-shovel:before { content: "\f13a"; }
+.flaticon-world-grid-with-arrow:before { content: "\f13b"; }
+    
+$font-Flaticon-3d-ship: "\f100";
+$font-Flaticon-battery-full-charge: "\f101";
+$font-Flaticon-burning-oil-tower: "\f102";
+$font-Flaticon-businessman-with-helmet: "\f103";
+$font-Flaticon-car-battery: "\f104";
+$font-Flaticon-cargo-ship: "\f105";
+$font-Flaticon-charging-battery-status: "\f106";
+$font-Flaticon-chemistry-atoms: "\f107";
+$font-Flaticon-circular-saw: "\f108";
+$font-Flaticon-co2-inside-cloud: "\f109";
+$font-Flaticon-construction-crane: "\f10a";
+$font-Flaticon-construction-crane-1: "\f10b";
+$font-Flaticon-construction-crane-2: "\f10c";
+$font-Flaticon-construction-truck: "\f10d";
+$font-Flaticon-electric-car: "\f10e";
+$font-Flaticon-electric-plug: "\f10f";
+$font-Flaticon-european-plug: "\f110";
+$font-Flaticon-european-socket: "\f111";
+$font-Flaticon-factory-silhouette: "\f112";
+$font-Flaticon-fire-flame: "\f113";
+$font-Flaticon-gas-can: "\f114";
+$font-Flaticon-gas-pump: "\f115";
+$font-Flaticon-gas-pump-1: "\f116";
+$font-Flaticon-high-speed-train: "\f117";
+$font-Flaticon-house-with-tree-leaf: "\f118";
+$font-Flaticon-industrial-pipe: "\f119";
+$font-Flaticon-industrial-pipe-1: "\f11a";
+$font-Flaticon-industrial-pipe-2: "\f11b";
+$font-Flaticon-light-bulb: "\f11c";
+$font-Flaticon-light-bulb-1: "\f11d";
+$font-Flaticon-light-bulb-2: "\f11e";
+$font-Flaticon-light-bulb-inside-circle: "\f11f";
+$font-Flaticon-mine-cart: "\f120";
+$font-Flaticon-mine-cart-1: "\f121";
+$font-Flaticon-nuclear-plant-chimneys: "\f122";
+$font-Flaticon-oil-drum: "\f123";
+$font-Flaticon-oil-drum-1: "\f124";
+$font-Flaticon-oil-platform: "\f125";
+$font-Flaticon-oil-pumpjack-extraction: "\f126";
+$font-Flaticon-oil-tower: "\f127";
+$font-Flaticon-pick-tool: "\f128";
+$font-Flaticon-pressure-indicator: "\f129";
+$font-Flaticon-recycling-truck: "\f12a";
+$font-Flaticon-refresh-arrows: "\f12b";
+$font-Flaticon-rounded-plug: "\f12c";
+$font-Flaticon-rubbish-can: "\f12d";
+$font-Flaticon-silhouette-pushing-wheelbarrow: "\f12e";
+$font-Flaticon-solar-panels: "\f12f";
+$font-Flaticon-sun-with-plug: "\f130";
+$font-Flaticon-toxic-sign: "\f131";
+$font-Flaticon-train-tank-wagon: "\f132";
+$font-Flaticon-transmission-tower: "\f133";
+$font-Flaticon-wall-socket: "\f134";
+$font-Flaticon-water-can: "\f135";
+$font-Flaticon-water-drop: "\f136";
+$font-Flaticon-water-truck: "\f137";
+$font-Flaticon-wind-turbines: "\f138";
+$font-Flaticon-worker-helmet: "\f139";
+$font-Flaticon-worker-with-shovel: "\f13a";
+$font-Flaticon-world-grid-with-arrow: "\f13b";
