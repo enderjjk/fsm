@@ -410,69 +410,64 @@
 		padding-bottom:10rem;
 		& .global--network__div{
 			position: relative;
-			min-height: 200px;
 			background: url("../images/assets/world-map.png") no-repeat;
 			background-size: 100%;
 			min-height:800px;
 			& .global--network__office{
+				cursor: pointer;
+				transition: all .2s ease-in-out;
 				position: absolute;
 				&.moscow--office{
 					top: 200px;
 					left: 55%;
 				}
-				& .small{
-					transform: all 0.5s;
+				& > div{
+					border-radius: 50%;
+					background: $brand-primary;
 					height:10px;
 					width:10px;
-					border-radius: 50%;
-					background:$brand-primary;
-					font-size: 0;
-					opacity: 1;
-					position: relative;
-					top:50%;
-					left:50%;
-					margin-top:-5px;
-					margin-left:-5px;
-				}
-				& .big{
-					transform: all 0.5s;
-					border-radius: 50%;
-					height:150px;
-					width:150px;
-					padding:25px;
-					top:50%;
-					left:50%;
-					margin-top:-100px;
-					margin-left:-100px;
-					background: $brand-primary;
-					opacity: 0;
+					& h5, & p{
+						font-size: 0;
+					}
+					& h5{ 
+						margin-bottom:0.25rem;
+					}
 				}
 				&:hover{
-					& .small{
-						opacity: 0;
-					}
-					& .big{
-						opacity: 1;
+					transform: scale(1.1);
+					& > div{
+						position: absolute;
+						top:50%;
+						left:50%;
+						margin-top:-75px;
+						margin-left:-75px;
+						& h5, & p{
+							font-size:0.75em;
+						}
+						height:150px;
+						width:150px;
+						padding:25px;
 					}
 				}
 			}
 		}
 	}
-	&.current--vacancies{
+	&.jobs, &.offices{
 		background: $white;
 		padding-top:10rem;
-		padding-bottom:20rem;
-		& .current--vacancies__vacancy{
+		padding-bottom:10rem;
+		& .jobs__job, & .offices__office{
 			border:1px solid $grey-lighter;
 			position: relative;
 			-webkit-box-shadow:0 1px 4px $grey-lighter, 0 0 40px $grey-lighter;
 			-moz-box-shadow:0 1px 4px $grey-lighter, 0 0 40px $grey-lighter;
 			box-shadow:0 1px 4px $grey-lighter, 0 0 40px $grey-lighter;
-			& .current--vacancies__vacancy--content{
-				& h4{
-					color:  $brand-secondary;
-				}
-				& .current--vacancies__vacancy--content--div{
+			& h4{
+				color:  $brand-secondary;
+				margin-bottom: 0.5rem;
+			}
+			& .jobs__job--content{
+				& .jobs__job--content__div{
 					&.more{
 						display: none;
 						&.open{
@@ -483,8 +478,47 @@
 					}
 				}
 			}
-			& .current--vacancies__vacancy--contact{
+			& .offices__office--image{
+				& img{ 
+					width: 100%; 
+				}
+			}
+			& .jobs__job--contact, 
+			& .offices__office--contact, 
+			& .offices__office--address{				
 				border-left:1px solid $grey-lighter;
+				& h5{ 
+					margin-bottom: 0.5rem; 
+				}
+				& i{
+					&.material-icons{
+						position: relative;
+						top:4px;
+						font-size: 18px;
+						color: $brand-primary;
+					}
+				}
+				& .trasports--covered{
+					width:100%;
+					& i {
+						padding:12.5px;
+						height: 50px;
+						width: 50px;
+						border-radius: 50% !important;
+						margin-right: 1rem;
+						background: $brand-primary;
+						color: $white;
+						font-size: 26px;
+						text-align: center;
+					}
+				}
+			}
+		}
+		& .offices__office{
+			display: none;
+			transition: all .2s ease-in-out;
+			&.show{
+				display: block;
 			}
 		}
 	}

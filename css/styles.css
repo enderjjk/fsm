@@ -334,7 +334,8 @@ a {
   background: #f63495;
   padding: 10px;
   line-height: 20px;
-  color: #ffffff; }
+  color: #ffffff;
+  z-index: 1; }
 
 .btn {
   font-weight: bold; }
@@ -375,6 +376,54 @@ a {
     .btn.btn-simple:hover {
       background: none;
       text-decoration: underline; }
+
+.navbar {
+  padding: 0; }
+  .navbar .navbar-collapse .navbar-nav li.nav-item {
+    height: 70px; }
+    .navbar .navbar-collapse .navbar-nav li.nav-item a {
+      padding-top: 0;
+      padding-bottom: 0;
+      font-size: 1.1em; }
+      .navbar .navbar-collapse .navbar-nav li.nav-item a.nav-link {
+        padding: 0 2rem;
+        color: #001e37;
+        height: 70px;
+        line-height: 65px;
+        border-bottom-color: #ffffff; }
+        .navbar .navbar-collapse .navbar-nav li.nav-item a.nav-link:hover, .navbar .navbar-collapse .navbar-nav li.nav-item a.nav-link.active {
+          border-bottom: 5px solid #f63495; }
+        .navbar .navbar-collapse .navbar-nav li.nav-item a.nav-link.active {
+          font-weight: 500;
+          border-bottom: 5px solid #f63495; }
+
+.navbar-toggler {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  z-index: 9; }
+  .navbar-toggler i {
+    font-size: 40px;
+    top: -4px;
+    position: relative; }
+  .navbar-toggler.collapsed .navbar-toggler-icon #close {
+    display: none; }
+  .navbar-toggler.collapsed .navbar-toggler-icon #menu {
+    display: block; }
+  .navbar-toggler .navbar-toggler-icon #close {
+    display: block; }
+  .navbar-toggler .navbar-toggler-icon #menu {
+    display: none; }
+
+.offices__menu ul.nav li.nav-item a.nav-link {
+  padding-top: 0;
+  padding-bottom: 0;
+  border-right: 1px solid #eeeeee; }
+  .offices__menu ul.nav li.nav-item a.nav-link.active, .offices__menu ul.nav li.nav-item a.nav-link:hover {
+    color: #f63495; }
+
+.offices__menu ul.nav li.nav-item:nth-last-child() a.nav-link {
+  border: 0; }
 
 .navbar-toggler .menu-icon {
   position: fixed;
@@ -487,44 +536,6 @@ a {
 
 .menu {
   width: 100%; }
-
-.navbar {
-  padding: 0; }
-  .navbar .navbar-collapse .navbar-nav li.nav-item {
-    height: 70px; }
-    .navbar .navbar-collapse .navbar-nav li.nav-item a {
-      padding-top: 0;
-      padding-bottom: 0;
-      font-size: 1.1em; }
-      .navbar .navbar-collapse .navbar-nav li.nav-item a.nav-link {
-        padding: 0 2rem;
-        color: #001e37;
-        height: 70px;
-        line-height: 65px;
-        border-bottom-color: #ffffff; }
-        .navbar .navbar-collapse .navbar-nav li.nav-item a.nav-link:hover, .navbar .navbar-collapse .navbar-nav li.nav-item a.nav-link.active {
-          border-bottom: 5px solid #f63495; }
-        .navbar .navbar-collapse .navbar-nav li.nav-item a.nav-link.active {
-          font-weight: 500;
-          border-bottom: 5px solid #f63495; }
-
-.navbar-toggler {
-  position: absolute;
-  top: 20px;
-  right: 10px;
-  z-index: 9; }
-  .navbar-toggler i {
-    font-size: 40px;
-    top: -4px;
-    position: relative; }
-  .navbar-toggler.collapsed .navbar-toggler-icon #close {
-    display: none; }
-  .navbar-toggler.collapsed .navbar-toggler-icon #menu {
-    display: block; }
-  .navbar-toggler .navbar-toggler-icon #close {
-    display: block; }
-  .navbar-toggler .navbar-toggler-icon #menu {
-    display: none; }
 
 .section.intro {
   position: relative;
@@ -853,65 +864,126 @@ a {
   padding-bottom: 10rem; }
   .section.global--network .global--network__div {
     position: relative;
-    min-height: 200px;
     background: url("../images/assets/world-map.png") no-repeat;
     background-size: 100%;
     min-height: 800px; }
     .section.global--network .global--network__div .global--network__office {
+      cursor: pointer;
+      transition: all .2s ease-in-out;
       position: absolute; }
       .section.global--network .global--network__div .global--network__office.moscow--office {
         top: 200px;
         left: 55%; }
-      .section.global--network .global--network__div .global--network__office .small {
-        transform: all 0.5s;
+      .section.global--network .global--network__div .global--network__office > div {
+        border-radius: 50%;
+        background: #f63495;
         height: 10px;
-        width: 10px;
-        border-radius: 50%;
-        background: #f63495;
-        font-size: 0;
-        opacity: 1;
-        position: relative;
-        top: 50%;
-        left: 50%;
-        margin-top: -5px;
-        margin-left: -5px; }
-      .section.global--network .global--network__div .global--network__office .big {
-        transform: all 0.5s;
-        border-radius: 50%;
-        height: 150px;
-        width: 150px;
-        padding: 25px;
-        top: 50%;
-        left: 50%;
-        margin-top: -100px;
-        margin-left: -100px;
-        background: #f63495;
-        opacity: 0; }
-      .section.global--network .global--network__div .global--network__office:hover .small {
-        opacity: 0; }
-      .section.global--network .global--network__div .global--network__office:hover .big {
-        opacity: 1; }
+        width: 10px; }
+        .section.global--network .global--network__div .global--network__office > div h5, .section.global--network .global--network__div .global--network__office > div p {
+          font-size: 0; }
+        .section.global--network .global--network__div .global--network__office > div h5 {
+          margin-bottom: 0.25rem; }
+      .section.global--network .global--network__div .global--network__office:hover {
+        transform: scale(1.1); }
+        .section.global--network .global--network__div .global--network__office:hover > div {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-top: -75px;
+          margin-left: -75px;
+          height: 150px;
+          width: 150px;
+          padding: 25px; }
+          .section.global--network .global--network__div .global--network__office:hover > div h5, .section.global--network .global--network__div .global--network__office:hover > div p {
+            font-size: 0.75em; }
 
-.section.current--vacancies {
+.section.jobs, .section.offices {
   background: #ffffff;
   padding-top: 10rem;
-  padding-bottom: 20rem; }
-  .section.current--vacancies .current--vacancies__vacancy {
+  padding-bottom: 10rem; }
+  .section.jobs .jobs__job, .section.jobs .offices__office, .section.offices .jobs__job, .section.offices .offices__office {
     border: 1px solid #eeeeee;
     position: relative;
     -webkit-box-shadow: 0 1px 4px #eeeeee, 0 0 40px #eeeeee;
     -moz-box-shadow: 0 1px 4px #eeeeee, 0 0 40px #eeeeee;
     box-shadow: 0 1px 4px #eeeeee, 0 0 40px #eeeeee; }
-    .section.current--vacancies .current--vacancies__vacancy .current--vacancies__vacancy--content h4 {
-      color: #001e37; }
-    .section.current--vacancies .current--vacancies__vacancy .current--vacancies__vacancy--content .current--vacancies__vacancy--content--div.more {
+    .section.jobs .jobs__job h4, .section.jobs .offices__office h4, .section.offices .jobs__job h4, .section.offices .offices__office h4 {
+      color: #001e37;
+      margin-bottom: 0.5rem; }
+    .section.jobs .jobs__job .jobs__job--content .jobs__job--content__div.more, .section.jobs .offices__office .jobs__job--content .jobs__job--content__div.more, .section.offices .jobs__job .jobs__job--content .jobs__job--content__div.more, .section.offices .offices__office .jobs__job--content .jobs__job--content__div.more {
       display: none; }
-      .section.current--vacancies .current--vacancies__vacancy .current--vacancies__vacancy--content .current--vacancies__vacancy--content--div.more.open {
+      .section.jobs .jobs__job .jobs__job--content .jobs__job--content__div.more.open, .section.jobs .offices__office .jobs__job--content .jobs__job--content__div.more.open, .section.offices .jobs__job .jobs__job--content .jobs__job--content__div.more.open, .section.offices .offices__office .jobs__job--content .jobs__job--content__div.more.open {
         display: block;
         -webkit-animation: fadeIn 1s;
         animation: fadeIn 1s; }
-    .section.current--vacancies .current--vacancies__vacancy .current--vacancies__vacancy--contact {
+    .section.jobs .jobs__job .offices__office--image img, .section.jobs .offices__office .offices__office--image img, .section.offices .jobs__job .offices__office--image img, .section.offices .offices__office .offices__office--image img {
+      width: 100%; }
+    .section.jobs .jobs__job .jobs__job--contact,
+    .section.jobs .jobs__job .offices__office--contact,
+    .section.jobs .jobs__job .offices__office--address, .section.jobs .offices__office .jobs__job--contact,
+    .section.jobs .offices__office .offices__office--contact,
+    .section.jobs .offices__office .offices__office--address, .section.offices .jobs__job .jobs__job--contact,
+    .section.offices .jobs__job .offices__office--contact,
+    .section.offices .jobs__job .offices__office--address, .section.offices .offices__office .jobs__job--contact,
+    .section.offices .offices__office .offices__office--contact,
+    .section.offices .offices__office .offices__office--address {
       border-left: 1px solid #eeeeee; }
+      .section.jobs .jobs__job .jobs__job--contact h5,
+      .section.jobs .jobs__job .offices__office--contact h5,
+      .section.jobs .jobs__job .offices__office--address h5, .section.jobs .offices__office .jobs__job--contact h5,
+      .section.jobs .offices__office .offices__office--contact h5,
+      .section.jobs .offices__office .offices__office--address h5, .section.offices .jobs__job .jobs__job--contact h5,
+      .section.offices .jobs__job .offices__office--contact h5,
+      .section.offices .jobs__job .offices__office--address h5, .section.offices .offices__office .jobs__job--contact h5,
+      .section.offices .offices__office .offices__office--contact h5,
+      .section.offices .offices__office .offices__office--address h5 {
+        margin-bottom: 0.5rem; }
+      .section.jobs .jobs__job .jobs__job--contact i.material-icons,
+      .section.jobs .jobs__job .offices__office--contact i.material-icons,
+      .section.jobs .jobs__job .offices__office--address i.material-icons, .section.jobs .offices__office .jobs__job--contact i.material-icons,
+      .section.jobs .offices__office .offices__office--contact i.material-icons,
+      .section.jobs .offices__office .offices__office--address i.material-icons, .section.offices .jobs__job .jobs__job--contact i.material-icons,
+      .section.offices .jobs__job .offices__office--contact i.material-icons,
+      .section.offices .jobs__job .offices__office--address i.material-icons, .section.offices .offices__office .jobs__job--contact i.material-icons,
+      .section.offices .offices__office .offices__office--contact i.material-icons,
+      .section.offices .offices__office .offices__office--address i.material-icons {
+        position: relative;
+        top: 4px;
+        font-size: 18px;
+        color: #f63495; }
+      .section.jobs .jobs__job .jobs__job--contact .trasports--covered,
+      .section.jobs .jobs__job .offices__office--contact .trasports--covered,
+      .section.jobs .jobs__job .offices__office--address .trasports--covered, .section.jobs .offices__office .jobs__job--contact .trasports--covered,
+      .section.jobs .offices__office .offices__office--contact .trasports--covered,
+      .section.jobs .offices__office .offices__office--address .trasports--covered, .section.offices .jobs__job .jobs__job--contact .trasports--covered,
+      .section.offices .jobs__job .offices__office--contact .trasports--covered,
+      .section.offices .jobs__job .offices__office--address .trasports--covered, .section.offices .offices__office .jobs__job--contact .trasports--covered,
+      .section.offices .offices__office .offices__office--contact .trasports--covered,
+      .section.offices .offices__office .offices__office--address .trasports--covered {
+        width: 100%; }
+        .section.jobs .jobs__job .jobs__job--contact .trasports--covered i,
+        .section.jobs .jobs__job .offices__office--contact .trasports--covered i,
+        .section.jobs .jobs__job .offices__office--address .trasports--covered i, .section.jobs .offices__office .jobs__job--contact .trasports--covered i,
+        .section.jobs .offices__office .offices__office--contact .trasports--covered i,
+        .section.jobs .offices__office .offices__office--address .trasports--covered i, .section.offices .jobs__job .jobs__job--contact .trasports--covered i,
+        .section.offices .jobs__job .offices__office--contact .trasports--covered i,
+        .section.offices .jobs__job .offices__office--address .trasports--covered i, .section.offices .offices__office .jobs__job--contact .trasports--covered i,
+        .section.offices .offices__office .offices__office--contact .trasports--covered i,
+        .section.offices .offices__office .offices__office--address .trasports--covered i {
+          padding: 12.5px;
+          height: 50px;
+          width: 50px;
+          border-radius: 50% !important;
+          margin-right: 1rem;
+          background: #f63495;
+          color: #ffffff;
+          font-size: 26px;
+          text-align: center; }
+  .section.jobs .offices__office, .section.offices .offices__office {
+    display: none;
+    transition: all .2s ease-in-out; }
+    .section.jobs .offices__office.show, .section.offices .offices__office.show {
+      display: block; }
 
 .section.industries {
   padding-top: 10rem;
