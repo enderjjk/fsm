@@ -859,6 +859,7 @@ a {
         clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0 100%); }
 
 .section.global--network {
+  position: relative;
   background: #eeeeee;
   padding-top: 10rem;
   padding-bottom: 10rem; }
@@ -896,6 +897,26 @@ a {
           padding: 25px; }
           .section.global--network .global--network__div .global--network__office:hover > div h5, .section.global--network .global--network__div .global--network__office:hover > div p {
             font-size: 0.75em; }
+  .section.global--network .global--network__bottom--left--element {
+    background: #ffffff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 15rem;
+    content: "";
+    -webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    clip-path: polygon(100% 0, 0 100%, 100% 100%); }
+  .section.global--network .global--network__bottom--left--element-color {
+    background: #f63495;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 5rem;
+    content: "";
+    -webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    clip-path: polygon(100% 0, 0 100%, 100% 100%); }
 
 .section.jobs, .section.offices {
   background: #ffffff;
